@@ -1,5 +1,6 @@
-This is a simple FastAPI application for converting html files to pdf files. Inspiration for the app came from PDF generation limitations on the Salesforce platform.
+# Docker image using the Playwright python image as base
 
-It is intented to only be used as a private API since there are no security checks for the content that is being sent to the server.  
+This branch explores using the [Playwright python image](https://github.com/microsoft/playwright-python) as a base for our container, since it includes both playwright and Chromium that we use for pdf conversion.
 
-_pdf_converter_factory_ is meant to be extended to include other pdf converter options.
+## Results
+The application works as expected, but the image size is 4.22 GB. Other possible base images will be explored to reduce the size of our image.
