@@ -1,8 +1,8 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
-from services.pdf_converter_factory import build_pdf_converter
-from routers import pdf_converter
+from app.services.pdf_converter_factory import build_pdf_converter
+from app.routers import pdf_converter
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
